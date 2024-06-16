@@ -1,0 +1,19 @@
+{
+  "name": "twodtothreed",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+   
+    "vite": "^5.2.0"
+  },
+  "dependencies": {
+    "@babylonjs/core": "^7.10.3",
+    "earcut": "^2.2.4"
+  }
+}

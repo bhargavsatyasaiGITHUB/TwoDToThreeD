@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+    <title>Snaptrude Assignment</title>
+    <link rel="stylesheet" href="./style.css" >
+    <script src="https://cdn.babylonjs.com/babylon.js"></script>
+</head>
+<body>
+    <canvas id="renderCanvas"></canvas>
+    <div id="sidePanel">
+        <h2>Shape Operations</h2>
+        <button class="btn" id="addShapeButton">Add Shape</button>
+        <input type="number" id="extrudeLength" class="hidden" placeholder="Extrude Length" min="0" step="0.01" value = '10'>
+        <button class="hidden btn option" id="extrudeButton">Extrude</button>
+        <button class="hidden btn option " id="cancelAddShapeButton">✖ Cancel</button>
+       
+        <h2>Shape Modifications</h2>
+        <button class="btn" id="moveButton" disabled>Move</button>
+        <button class="hidden btn option " id="saveMoveButton">Save</button>
+        <button class="hidden btn option" id="cancelMoveButton">✖ Cancel</button>
+        <button class="btn" id="vertexEditButton" disabled>Vertex Edit</button>
+      
+        <button class="hidden btn option" id="movePointButton" disabled>Move Vertex</button>
+        <button class="hidden btn option " id="saveMovePointButton">Save</button>
+        <button class="hidden btn option" id="cancelMovePointButton">✖ Cancel</button>
+        <button class="hidden btn option" id="doneEditButton">Done Edit</button>
+    </div>
+    <script type="module" src="./main.js"></script>
+</body>
+</html>

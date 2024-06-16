@@ -1,0 +1,119 @@
+/* style.css */
+
+body {
+  margin: 0;
+  overflow: hidden;
+  font-family: 'Roboto', sans-serif;
+  background-color: #1dba61;
+  color: #30484f;
+}
+
+canvas {
+  width: 100vw;
+  height: 100vh;
+  display: block;
+}
+
+#sidePanel {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100vh;
+  background: #34495e;
+  padding: 20px;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+  overflow-y: auto;
+}
+
+h2 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #1abc9c;
+  border-bottom: 1px solid #1abc9c;
+  padding-bottom: 5px;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
+  margin: 10px 0;
+  background: #1abc9c;
+  border: none;
+  color: #ecf0f1;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #16a085;
+}
+
+.btn:disabled {
+  background: #7f8c8d;
+  cursor: not-allowed;
+}
+
+.hidden {
+  display: none;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  background: #2c3e50;
+  border: 1px solid #1abc9c;
+  color: #ecf0f1;
+  font-size: 14px;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+input[type="number"] {
+  appearance: textfield;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+.option {
+  margin-left: 20px;
+  margin-right: 20px;
+  background: #2980b9;
+}
+
+.option:hover {
+  background: #3498db;
+}
+
+#sidePanel button:disabled {
+  background: #7f8c8d;
+}
+
+#sidePanel button:disabled:hover {
+  transform: none;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #34495e;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1abc9c;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #16a085;
+}
